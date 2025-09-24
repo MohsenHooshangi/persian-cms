@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Persian CMS – Single Page Application with Node.js Backend & React Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-featured **Persian CMS** built as a **Single Page Application (SPA)** with a **custom Node.js backend** and **MySQL database**.  
+This project demonstrates building a scalable CMS with **dedicated APIs**, real-time CRUD operations, and a fully interactive React.js frontend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔧 Project Overview
 
-### `npm start`
+- 👨‍💻 **Role:** Full-stack development (Frontend + Backend + Database)  
+- 📅 **Status:** Completed  
+- 🌐 **Test Environment:** [Localhost Development – mh-develop.local](http://mh-develop.local)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧰 Technologies Used
 
-### `npm test`
+- **React.js** – SPA frontend with routing and reusable components.  
+- **Node.js** – Backend server with custom REST APIs.  
+- **MySQL** – Relational database for products, users, comments, and orders.  
+- **CSS** – Component styling and layout.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧠 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🎨 **Frontend (React.js)**  
+  - Dynamic **Sidebar** and **Header** templates.  
+  - Routing with `useRoutes` for optimized navigation.  
+  - Custom components: `ProductsTable`, `AddNewProduct`, `ErrorBox`, `DetailsModal`.  
+  - State management with lifting state for better access.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ⚙️ **Backend (Node.js)**  
+  - RESTful APIs for **products, comments, users, and orders**.  
+  - Secure product CRUD (create, read, update, delete).  
+  - Comment moderation system: approve, reject, edit, delete.  
+  - User management: view, edit, and update user details.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 💾 **Database (MySQL)**  
+  - Structured tables for products, comments, users, and orders.  
+  - Sample schema and data import for development.  
 
-### `npm run eject`
+- 🔐 **Additional Functionalities**  
+  - Product availability handling.  
+  - Multiple modals (confirm delete, edit product, edit comment, edit user).  
+  - Error handling UI with custom error boxes.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📂 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **`frontend/`**  
+- `components/` – Reusable UI components (Sidebar, Header, ProductsTable, etc.).  
+- `routes/` – React Router configuration.  
+- `app.js`, `index.js` – Main entry points.  
+- `custom.css` – Custom styling for UI.  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **`backend/`**  
+- `server.js` – Entry point of Node.js server.  
+- `routes/` – APIs for products, comments, users, orders.  
+- `db/` – Database connection and schema.  
+- `package.json` – Backend dependencies.  
 
-## Learn More
+### **`screenshots/`**  
+- `Home-Persian-CMS-Page.JPG` – CMS homepage preview.  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📸 Screenshot
 
-### Code Splitting
+| Screenshot | Description |
+|------------|-------------|
+| `Home-Persian-CMS-Page.JPG` | Persian CMS main dashboard |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🗂️ Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/MohsenHooshangi/Persian-CMS.git
 
-### Making a Progressive Web App
+2. Install frontend dependencies: 
+    cd frontend
+    npm install
+3. Install backend dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    cd backend
+    npm install
 
-### Advanced Configuration
+4. Import database schema:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    Run the provided schema.sql inside MySQL.
 
-### Deployment
+5. Configure environment variables:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    Create .env in backend and set DB credentials.
 
-### `npm run build` fails to minify
+6. Run backend server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    npm start
+
+7. Run frontend development server:
+
+    npm start
+
+
+## 📌 Notes
+
+- SPA architecture for smooth navigation.
+- Custom Node.js APIs fully integrated with React frontend.
+- Database-driven with MySQL relational models.
+- Project structured for scalability and modularity.  
+
+---
+
+## 📬 Contact
+
+If you’d like to learn more or collaborate:
+
+- 📧 Email: **mr.hooshangi.official@gmail.com**  
+- 🌐 Website: [www.mohsenhooshangi.ir](https://www.mohsenhooshangi.ir)  
+- 🖥️ GitHub: [github.com/MohsenHooshangi](https://github.com/MohsenHooshangi) 
+
+
+
