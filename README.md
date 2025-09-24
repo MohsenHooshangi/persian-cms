@@ -67,10 +67,7 @@ This project demonstrates building a scalable CMS with **dedicated APIs**, real-
 ---
 
 ## 📸 Screenshot
-
-| Screenshot | Description |
-|------------|-------------|
-| `Home-Persian-CMS-Page.JPG` | Persian CMS main dashboard |
+![Admin Dashboard Home](./screenshots/Home-Persian-CMS-Page.JPG)
 
 ---
 
